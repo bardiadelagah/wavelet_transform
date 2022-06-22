@@ -1,6 +1,6 @@
 # wavelet_transform
 
-This code remove noise with using Wavelet Transform and Middle filter
+This code remove noise with using Wavelet Transform and medfilt2.
 
 ## How it works
 
