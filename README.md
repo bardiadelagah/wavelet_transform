@@ -36,7 +36,7 @@ subplot(1,2,2),imshow(img_noise)
 
 orginal image             |  noised image
 :-------------------------:|:-------------------------:
-![](https://github.com/bardiadelagah/Contrast_Stretching/blob/main/9.jpg)  |  ![](https://github.com/bardiadelagah/Contrast_Stretching/blob/main/3.jpg)
+![](https://github.com/bardiadelagah/wavelet_transform/blob/main/HW09_1/original_image.jpg)  |  ![](https://github.com/bardiadelagah/wavelet_transform/blob/main/HW09_1/noised_img.jpg)
 
 Then we apply Wavelet Transform with 'sym4' as symlet to the noised image and get CA, CV, CH, and CD as output. Now we apply two middle filter with kernel
 size 3 and 9 to CA, CV, CH, and CD for remove the noised.
@@ -79,12 +79,12 @@ re_img_med2 = uint8(re_img_med2);
 
 As you can see apply medfilt2 to wavelet Transform outpu has better result for removing noises from image.
 
-orginal image             |  noised image
+metfilt2 using 3 as kernel size            |  metfilt2 using 9 as kernel size 
 :-------------------------:|:-------------------------:
-![](https://github.com/bardiadelagah/Contrast_Stretching/blob/main/9.jpg)  |  ![](https://github.com/bardiadelagah/Contrast_Stretching/blob/main/3.jpg)
+![](https://github.com/bardiadelagah/wavelet_transform/blob/main/HW09_1/noised_img_med1.jpg)  |  ![](https://github.com/bardiadelagah/wavelet_transform/blob/main/HW09_1/noised_img_med2.jpg)
 
-orginal image             |  noised image
+reconstuction wavelet with metfilt2 using 3 as kernel size             |  reconstuction wavelet with metfilt2 using 9 as kernel size 
 :-------------------------:|:-------------------------:
-![](https://github.com/bardiadelagah/Contrast_Stretching/blob/main/9.jpg)  |  ![](https://github.com/bardiadelagah/Contrast_Stretching/blob/main/3.jpg)
+![](https://github.com/bardiadelagah/wavelet_transform/blob/main/HW09_1/final_img_med1.jpg)  |  ![](https://github.com/bardiadelagah/wavelet_transform/blob/main/HW09_1/final_img_med2.jpg)
 
 
