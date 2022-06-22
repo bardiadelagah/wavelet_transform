@@ -4,18 +4,6 @@ This code remove noise with using Wavelet Transform and medfilt2.
 
 ## How it works
 
-The project has 3 main files.
-
-```bash
-.
-├── HW09_1.m               
-├── HW09_2.m  
-├── HW09_3.m
-.
-```
-
-## HW09_1.m discription
-
 The HW09_1.m read image and add salt and pepper noise.
 
 ```matlab
@@ -77,7 +65,7 @@ re_img_med2 = idwt2(ca_med2, cv_med2, ch_med2, cd_med2, wn);
 re_img_med2 = uint8(re_img_med2);
 ```
 
-As you can see apply medfilt2 to wavelet Transform outpu has better result for removing noises from image.
+you can the difrenece between  apply medfilt2 to wavelet Transform output and apply medfilt2 to noised image.
 
 metfilt2 using 3 as kernel size            |  metfilt2 using 9 as kernel size 
 :-------------------------:|:-------------------------:
@@ -86,5 +74,24 @@ metfilt2 using 3 as kernel size            |  metfilt2 using 9 as kernel size
 reconstuction wavelet with metfilt2 using 3 as kernel size             |  reconstuction wavelet with metfilt2 using 9 as kernel size 
 :-------------------------:|:-------------------------:
 ![](https://github.com/bardiadelagah/wavelet_transform/blob/main/HW09_1/final_img_med1.jpg)  |  ![](https://github.com/bardiadelagah/wavelet_transform/blob/main/HW09_1/final_img_med2.jpg)
+
+## Donate us
+If you like our project and it's useful, feel free to donate us.
+
+Bitcoin(BTC): bc1qs2fatdfdvc5jyq4a0f5t7plmy8sxmyk08tq5e5
+
+Ethereum(ETH): 0x5847D46Bfed82a475ef4187cfBD55EF412C05093
+
+Tether(USDT-TRC20): TAmbZwJXDZ8bo2hjGXtNkTSEYi8dt2Xww8
+
+XRP(XRP): rqTpCtGtBEhcPjZLXfNTv3JbCdkRKGLCF
+
+Dogecoin(DOGE): DGZYMS6nnT3cBYwDtSD7VVubr1dSfykURC
+
+TRON(TRX): TAmbZwJXDZ8bo2hjGXtNkTSEYi8dt2Xww8
+
+BitTorrent-New(BTT-BEP20): 0x5847D46Bfed82a475ef4187cfBD55EF412C05093
+
+Decentraland(MANA-ERC20): 0x5847D46Bfed82a475ef4187cfBD55EF412C05093
 
 
