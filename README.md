@@ -34,6 +34,10 @@ subplot(1,2,1),imshow(img)
 subplot(1,2,2),imshow(img_noise)
 ```
 
+orginal image             |  noised image
+:-------------------------:|:-------------------------:
+![](https://github.com/bardiadelagah/Contrast_Stretching/blob/main/9.jpg)  |  ![](https://github.com/bardiadelagah/Contrast_Stretching/blob/main/3.jpg)
+
 Then we apply Wavelet Transform with 'sym4' as symlet to the noised image and get CA, CV, CH, and CD as output. Now we apply two middle filter with kernel
 size 3 and 9 to CA, CV, CH, and CD for remove the noised.
 
@@ -72,5 +76,15 @@ re_img_med1 = uint8(re_img_med1);
 re_img_med2 = idwt2(ca_med2, cv_med2, ch_med2, cd_med2, wn);
 re_img_med2 = uint8(re_img_med2);
 ```
+
+As you can see apply medfilt2 to wavelet Transform outpu has better result for removing noises from image.
+
+orginal image             |  noised image
+:-------------------------:|:-------------------------:
+![](https://github.com/bardiadelagah/Contrast_Stretching/blob/main/9.jpg)  |  ![](https://github.com/bardiadelagah/Contrast_Stretching/blob/main/3.jpg)
+
+orginal image             |  noised image
+:-------------------------:|:-------------------------:
+![](https://github.com/bardiadelagah/Contrast_Stretching/blob/main/9.jpg)  |  ![](https://github.com/bardiadelagah/Contrast_Stretching/blob/main/3.jpg)
 
 
