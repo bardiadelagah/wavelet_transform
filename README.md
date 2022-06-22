@@ -14,6 +14,8 @@ The project has 3 main files.
 .
 ```
 
+## HW09_1.m discription
+
 The HW09_1.m read image and add salt and pepper noise.
 
 ```matlab
